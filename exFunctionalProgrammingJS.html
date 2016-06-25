@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1 id="demo1">My First Heading</h1>
+<h1 id="demo2">My First Heading</h1>
+<h1 id="demo3">My First Heading</h1>
+
+<script>
+ 
+//Primeiro exemplo:
+//===
+var titleString1 = "tio,tia"
+var titleText1 = ""
+titleString1.split(",").map($0 => titleText1 += $0 + " ")
+document.getElementById("demo1").innerHTML = titleText1
+
+//Segundo exemplo:
+//===
+var titleString2 = "tio,tia"
+var titleText2 = ""
+titleString2.split(",").map($0 => ($0.charAt(0).toUpperCase()+$0.slice(1))).map($0 => titleText2 += $0 + " ")
+document.getElementById("demo2").innerHTML = titleText2
+
+//Terceiro exemplo:
+//===
+var titleString3 = "tio,tia"
+var titleText3 = ""
+titleString3.split(",").map($0 => ($0.charAt(0).toUpperCase()+$0.slice(1) +"(s)")).map($0 => titleText3 += $0 + " ")
+document.getElementById("demo3").innerHTML = titleText3
+
+</script>
+
+</body>
+</html>
+
+
